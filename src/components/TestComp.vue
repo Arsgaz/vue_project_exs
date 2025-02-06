@@ -2,15 +2,17 @@
 	export default {
 		data() {
 		    return {
-                name: 'John',
-		        sur: 'Smit',
+                num: 5,
+                num1: 1,
+		        num2: 2,
+		        num3: 3,
 		    }
 	    }
 	}
 </script>
 <template>
 	<div>
-		<p>{{ name }}</p>
-	    <p>{{ sur }}</p>
+		{{ num * num }}
+        {{  num1 + num2 + num3 }}
 	</div>
 </template>
