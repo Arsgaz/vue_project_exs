@@ -2,19 +2,20 @@
 	export default {
 		data() {
 		    return {
-                
+                num1: 1,
+				num2: 2,
             }
 	    },
         methods: {
             show: function() { 
-		    alert(new Date());
+			var a = this.num1 + this.num2;
+		    alert(a);
 	    }
 	}
 	}
 </script>
 <template>
 	<div>
-		<button @click = "show">text</button>
-        <br> <button @mouseover = "show">text</button>
+		{{show()}}
 	</div>
 </template>
