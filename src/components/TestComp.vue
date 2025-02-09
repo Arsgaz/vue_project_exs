@@ -1,10 +1,12 @@
 <script>
 	export default {
 		data() {
-		    
+		    return {
+                
+            }
 	    },
         methods: {
-            show: function() {
+            show: function() { 
 		    alert(new Date());
 	    }
 	}
@@ -12,6 +14,7 @@
 </script>
 <template>
 	<div>
-		{{ show() }}
+		<button @click = "show">text</button>
+        <br> <button @mouseover = "show">text</button>
 	</div>
 </template>
